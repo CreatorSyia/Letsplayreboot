@@ -8,19 +8,19 @@
         /* 기본 웹사이트 스타일 설정 (파스텔 베이지 톤) */
         body {
             font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-            background-color: #F9F6F0; /* 따뜻한 파스텔톤 베이지 배경 */
-            color: #4A4036; /* 부드러운 다크 브라운 텍스트 */
+            background-color: #F9F6F0; 
+            color: #4A4036; 
             margin: 0;
             padding: 0;
         }
 
         /* 상단 헤더 디자인 */
         header {
-            background-color: #FFFFFF; /* 깔끔한 흰색 배경 */
-            color: #6B5E53; /* 베이지 톤과 어울리는 텍스트 */
+            background-color: #FFFFFF; 
+            color: #6B5E53; 
             text-align: center;
             padding: 3.5rem 1rem;
-            box-shadow: 0 4px 15px rgba(139, 122, 107, 0.08); /* 따뜻한 느낌의 은은한 그림자 */
+            box-shadow: 0 4px 15px rgba(139, 122, 107, 0.08); 
             border-bottom: 1px solid #F0EBE1;
         }
 
@@ -51,15 +51,20 @@
             gap: 2.5rem;
         }
 
-        /* 개별 멤버 카드 디자인 */
+        /* 💡 개별 멤버 카드 디자인 (링크 스타일 추가) */
         .member-card {
-            background: #FFFFFF; /* 흰색 카드 배경 */
+            display: block; /* a 태그를 블록 요소로 변경 */
+            text-decoration: none; /* 링크의 기본 밑줄 제거 */
+            color: inherit; /* 링크 기본 색상(파란색) 제거하고 부모 색상 따름 */
+            
+            background: #FFFFFF; 
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(139, 122, 107, 0.08);
-            border: 1px solid #F4EFE6; /* 아주 연한 베이지 테두리 */
+            border: 1px solid #F4EFE6; 
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
+            cursor: pointer; /* 마우스를 올리면 손가락 모양으로 변경 */
         }
 
         /* 카드에 마우스를 올렸을 때 애니메이션 */
@@ -72,7 +77,7 @@
         .member-photo {
             width: 100%;
             height: 250px;
-            background-color: #F2EDE4; /* 사진이 없을 때 보이는 베이지톤 배경 */
+            background-color: #F2EDE4; 
             object-fit: cover;
         }
 
@@ -90,8 +95,8 @@
 
         .member-role {
             display: inline-block;
-            background-color: #F4EFE6; /* 태그 배경: 연한 베이지 */
-            color: #8C7A6B; /* 태그 글씨: 짙은 베이지 */
+            background-color: #F4EFE6; 
+            color: #8C7A6B; 
             padding: 0.3rem 0.8rem;
             border-radius: 20px;
             font-size: 0.9rem;
@@ -119,85 +124,85 @@
     <div class="container">
         <div class="member-grid">
             
-            <!-- 멤버 1 -->
-            <div class="member-card">
+            <!-- 💡 변경된 부분: div 대신 a 태그 사용, href 속성으로 이동할 페이지 지정 -->
+            <a href="member1.html" class="member-card">
                 <img src="https://via.placeholder.com/400x300/EAE0D5/ffffff?text=Photo" alt="멤버 1 사진" class="member-photo">
                 <div class="member-info">
                     <h2 class="member-name">멤버 1 이름</h2>
                     <div class="member-role">모임장 / 계획러</div>
                     <p class="member-desc">"놀러가자 리부트를 이끄는 든든한 대장! J성향 100%의 완벽한 플래너입니다."</p>
                 </div>
-            </div>
+            </a>
 
             <!-- 멤버 2 -->
-            <div class="member-card">
+            <a href="member2.html" class="member-card">
                 <img src="https://via.placeholder.com/400x300/EAE0D5/ffffff?text=Photo" alt="멤버 2 사진" class="member-photo">
                 <div class="member-info">
                     <h2 class="member-name">멤버 2 이름</h2>
                     <div class="member-role">분위기 메이커</div>
                     <p class="member-desc">"오디오가 비는 것을 참지 못하는 수다쟁이. 모임의 웃음을 책임집니다."</p>
                 </div>
-            </div>
+            </a>
 
             <!-- 멤버 3 -->
-            <div class="member-card">
+            <a href="member3.html" class="member-card">
                 <img src="https://via.placeholder.com/400x300/EAE0D5/ffffff?text=Photo" alt="멤버 3 사진" class="member-photo">
                 <div class="member-info">
                     <h2 class="member-name">멤버 3 이름</h2>
                     <div class="member-role">길찾기 장인</div>
                     <p class="member-desc">"인간 내비게이션. 이 친구만 따라가면 절대 길을 잃지 않아요."</p>
                 </div>
-            </div>
+            </a>
 
             <!-- 멤버 4 -->
-            <div class="member-card">
+            <a href="member4.html" class="member-card">
                 <img src="https://via.placeholder.com/400x300/EAE0D5/ffffff?text=Photo" alt="멤버 4 사진" class="member-photo">
                 <div class="member-info">
                     <h2 class="member-name">멤버 4 이름</h2>
                     <div class="member-role">메인 포토그래퍼</div>
                     <p class="member-desc">"우리의 인생샷을 남겨주는 금손! 항상 카메라를 들고 다닙니다."</p>
                 </div>
-            </div>
+            </a>
 
             <!-- 멤버 5 -->
-            <div class="member-card">
+            <a href="member5.html" class="member-card">
                 <img src="https://via.placeholder.com/400x300/EAE0D5/ffffff?text=Photo" alt="멤버 5 사진" class="member-photo">
                 <div class="member-info">
                     <h2 class="member-name">멤버 5 이름</h2>
                     <div class="member-role">총무 / 회계</div>
                     <p class="member-desc">"1원 단위까지 칼같이 나누는 투명한 회계의 달인입니다."</p>
                 </div>
-            </div>
+            </a>
 
             <!-- 멤버 6 -->
-            <div class="member-card">
+            <a href="member6.html" class="member-card">
                 <img src="https://via.placeholder.com/400x300/EAE0D5/ffffff?text=Photo" alt="멤버 6 사진" class="member-photo">
                 <div class="member-info">
                     <h2 class="member-name">멤버 6 이름</h2>
                     <div class="member-role">맛집 감별사</div>
                     <p class="member-desc">"전국의 맛집 지도를 머릿속에 넣고 다니는 쩝쩝박사."</p>
                 </div>
-            </div>
+            </a>
 
             <!-- 멤버 7 -->
-            <div class="member-card">
+            <a href="member7.html" class="member-card">
                 <img src="https://via.placeholder.com/400x300/EAE0D5/ffffff?text=Photo" alt="멤버 7 사진" class="member-photo">
                 <div class="member-info">
                     <h2 class="member-name">멤버 7 이름</h2>
                     <div class="member-role">리액션 봇</div>
                     <p class="member-desc">"누가 무슨 말을 하든 세상에서 제일 재밌게 웃어주는 천사."</p>
                 </div>
-            </div>
+            </a>
 
             <!-- 멤버 8 -->
-            <div class="member-card">
+            <a href="member8.html" class="member-card">
                 <img src="https://via.placeholder.com/400x300/EAE0D5/ffffff?text=Photo" alt="멤버 8 사진" class="member-photo">
                 <div class="member-info">
                     <h2 class="member-name">멤버 8 이름</h2>
                     <div class="member-role">무한 체력</div>
                     <p class="member-desc">"밤을 새워도 끄떡없는 에너자이저! 모임의 후반전을 책임집니다."</p>
                 </div>
-            </div>
+            </a>
 
         </div>
     </div>
