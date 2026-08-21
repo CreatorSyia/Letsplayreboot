@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>놀러가자 리부트 🚀</title>
+    <style>
+        /* 기본 웹사이트 스타일 설정 */
+        body {
+            font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 상단 헤더 디자인 */
+        header {
+            background-color: #ff6b6b; /* 발랄하고 활기찬 코랄 레드 컬러 */
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* 멤버 카드들을 담는 컨테이너 */
+        .container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        /* 8개의 카드를 정렬하는 그리드 레이아웃 */
+        .member-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2.5rem;
+        }
+
+        /* 개별 멤버 카드 디자인 */
+        .member-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        /* 카드에 마우스를 올렸을 때 애니메이션 */
+        .member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        /* 멤버 사진 영역 */
+        .member-photo {
+            width: 100%;
+            height: 250px;
+            background-color: #e9ecef;
+            object-fit: cover;
+        }
+
+        /* 멤버 정보 영역 */
+        .member-info {
+            padding: 1.5rem;
+        }
+
+        .member-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 0 0.5rem 0;
+            color: #212529;
+        }
+
+        .member-role {
+            display: inline-block;
+            background-color: #ffe3e3;
+            color: #ff6b6b;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .member-desc {
+            color: #6c757d;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 웹사이트 상단 타이틀 영역 -->
+    <header>
+        <h1>놀러가자 리부트 🚀</h1>
+        <p>우리들의 잊지 못할 꿀잼 추억 만들기 프로젝트</p>
+    </header>
+
+    <!-- 멤버 소개 영역 -->
+    <div class="container">
+        <div class="member-grid">
+            
+            <!-- 멤버 1 -->
+            <div class="member-card">
+                <img src="https://via.placeholder.com/400x300/ff9999/ffffff?text=Photo" alt="멤버 1 사진" class="member-photo">
+                <div class="member-info">
+                    <h2 class="member-name">멤버 1 이름</h2>
+                    <div class="member-role">모임장 / 계획러</div>
+                    <p class="member-desc">"놀러가자 리부트를 이끄는 든든한 대장! J성향 100%의 완벽한 플래너입니다."</p>
+                </div>
+            </div>
+
+            <!-- 멤버 2 -->
+            <div class="member-card">
+                <img src="https://via.placeholder.com/400x300/ffcc99/ffffff?text=Photo" alt="멤버 2 사진" class="member-photo">
+                <div class="member-info">
+                    <h2 class="member-name">멤버 2 이름</h2>
+                    <div class="member-role">분위기 메이커</div>
+                    <p class="member-desc">"오디오가 비는 것을 참지 못하는 수다쟁이. 모임의 웃음을 책임집니다."</p>
+                </div>
+            </div>
+
+            <!-- 멤버 3 -->
+            <div class="member-card">
+                <img src="https://via.placeholder.com/400x300/ffff99/ffffff?text=Photo" alt="멤버 3 사진" class="member-photo">
+                <div class="member-info">
+                    <h2 class="member-name">멤버 3 이름</h2>
+                    <div class="member-role">길찾기 장인</div>
+                    <p class="member-desc">"인간 내비게이션. 이 친구만 따라가면 절대 길을 잃지 않아요."</p>
+                </div>
+            </div>
+
+            <!-- 멤버 4 -->
+            <div class="member-card">
+                <img src="https://via.placeholder.com/400x300/99ff99/ffffff?text=Photo" alt="멤버 4 사진" class="member-photo">
+                <div class="member-info">
+                    <h2 class="member-name">멤버 4 이름</h2>
+                    <div class="member-role">메인 포토그래퍼</div>
+                    <p class="member-desc">"우리의 인생샷을 남겨주는 금손! 항상 카메라를 들고 다닙니다."</p>
+                </div>
+            </div>
+
+            <!-- 멤버 5 -->
+            <div class="member-card">
+                <img src="https://via.placeholder.com/400x300/99ccff/ffffff?text=Photo" alt="멤버 5 사진" class="member-photo">
+                <div class="member-info">
+                    <h2 class="member-name">멤버 5 이름</h2>
+                    <div class="member-role">총무 / 회계</div>
+                    <p class="member-desc">"1원 단위까지 칼같이 나누는 투명한 회계의 달인입니다."</p>
+                </div>
+            </div>
+
+            <!-- 멤버 6 -->
+            <div class="member-card">
+                <img src="https://via.placeholder.com/400x300/9999ff/ffffff?text=Photo" alt="멤버 6 사진" class="member-photo">
+                <div class="member-info">
+                    <h2 class="member-name">멤버 6 이름</h2>
+                    <div class="member-role">맛집 감별사</div>
+                    <p class="member-desc">"전국의 맛집 지도를 머릿속에 넣고 다니는 쩝쩝박사."</p>
+                </div>
+            </div>
+
+            <!-- 멤버 7 -->
+            <div class="member-card">
+                <img src="https://via.placeholder.com/400x300/cc99ff/ffffff?text=Photo" alt="멤버 7 사진" class="member-photo">
+                <div class="member-info">
+                    <h2 class="member-name">멤버 7 이름</h2>
+                    <div class="member-role">리액션 봇</div>
+                    <p class="member-desc">"누가 무슨 말을 하든 세상에서 제일 재밌게 웃어주는 천사."</p>
+                </div>
+            </div>
+
+            <!-- 멤버 8 -->
+            <div class="member-card">
+                <img src="https://via.placeholder.com/400x300/ff99cc/ffffff?text=Photo" alt="멤버 8 사진" class="member-photo">
+                <div class="member-info">
+                    <h2 class="member-name">멤버 8 이름</h2>
+                    <div class="member-role">무한 체력</div>
+                    <p class="member-desc">"밤을 새워도 끄떡없는 에너자이저! 모임의 후반전을 책임집니다."</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
