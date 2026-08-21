@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멤버 1 상세 소개 🏕️</title>
+    <style>
+        /* 기본 웹사이트 스타일 설정 (메인 페이지와 동일한 테마) */
+        body {
+            font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            background-color: #F9F6F0; 
+            color: #4A4036; 
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 메인 컨테이너 (상세 페이지는 집중도를 위해 조금 더 좁게 설정) */
+        .container {
+            max-width: 800px; 
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        /* 💡 뒤로 가기 버튼 디자인 */
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            background-color: #FFFFFF;
+            color: #8C7A6B;
+            padding: 0.6rem 1.2rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 10px rgba(139, 122, 107, 0.08);
+            border: 1px solid #F4EFE6;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        /* 뒤로 가기 버튼 마우스 호버 효과 */
+        .back-btn:hover {
+            transform: translateX(-5px); /* 왼쪽으로 살짝 이동 */
+            box-shadow: 0 6px 15px rgba(139, 122, 107, 0.15);
+            color: #4A4036;
+        }
+
+        /* 상세 프로필 카드 래퍼 */
+        .profile-card {
+            background: #FFFFFF;
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(139, 122, 107, 0.08);
+            border: 1px solid #F4EFE6;
+        }
+
+        /* 프로필 이미지 (둥글게) */
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* 완전한 원형으로 만들기 */
+            object-fit: cover;
+            background-color: #F2EDE4;
+            margin: 0 auto 1.5rem auto;
+            border: 5px solid #F9F6F0; /* 테두리 효과 */
+            box-shadow: 0 4px 15px rgba(139, 122, 107, 0.1);
+        }
+
+        /* 프로필 기본 텍스트 */
+        .profile-name {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0 0 0.5rem 0;
+            color: #4A4036;
+        }
+
+        .profile-role {
+            display: inline-block;
+            background-color: #F4EFE6;
+            color: #8C7A6B;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .profile-quote {
+            font-size: 1.1rem;
+            color: #7A726A;
+            font-style: italic;
+            margin-bottom: 2.5rem;
+        }
+
+        /* 세부 정보 그리드 (TMI, MBTI 등) */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2열 배치 */
+            gap: 1.5rem;
+            text-align: left;
+        }
+
+        /* 모바일 화면에서는 1열로 세로 배치되도록 설정 */
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr; 
+            }
+        }
+
+        /* 개별 세부 정보 박스 */
+        .info-item {
+            background-color: #F9F6F0; /* 메인 배경색과 동일한 박스 */
+            padding: 1.5rem;
+            border-radius: 15px;
+        }
+
+        .info-item h3 {
+            margin: 0 0 0.8rem 0;
+            font-size: 1.1rem;
+            color: #6B5E53;
+            border-bottom: 2px solid #EAE0D5;
+            padding-bottom: 0.5rem;
+        }
+
+        .info-item p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #4A4036;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 💡 뒤로 가기 버튼 (index.html로 이동) -->
+        <a href="index.html" class="back-btn">
+            ← 메인으로 돌아가기
+        </a>
+
+        <!-- 상세 프로필 카드 영역 -->
+        <div class="profile-card">
+            <!-- 프로필 사진 -->
+            <img src="https://via.placeholder.com/400x400/EAE0D5/ffffff?text=Profile" alt="멤버 1 사진" class="profile-image">
+            
+            <!-- 기본 정보 -->
+            <h1 class="profile-name">김계획 (멤버 1)</h1>
+            <div class="profile-role">모임장 / 계획러</div>
+            <p class="profile-quote">"계획 없는 여행은 상상할 수 없어! 완벽한 일정은 나에게 맡겨."</p>
+
+            <!-- 세부 정보 (MBTI, 특징 등) -->
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>📌 MBTI</h3>
+                    <p><strong>ESTJ (엄격한 관리자)</strong><br>시간 약속 어기는 걸 제일 싫어함. 엑셀로 단위별 여행 일정표 짤 때 희열을 느낌.</p>
+                </div>
+                <div class="info-item">
+                    <h3>✨ 모임 내 필살기</h3>
+                    <p>웨이팅 지옥 맛집 프리패스 예약 스킬, 1분 단위 칼같은 타임 테이블 생성, 길 잃은 멤버들 모으기</p>
+                </div>
+                <div class="info-item">
+                    <h3>💖 취미 생활</h3>
+                    <p>감성 캠핑용품 수집, 노션(Notion)으로 다이어리 꾸미기, 새로운 맛집 탐방 후 평점 매기기</p>
+                </div>
+                <div class="info-item">
+                    <h3>🗣️ 멤버들이 말하는 나</h3>
+                    <p>"조금 빡세긴 한데, 얘만 따라다니면 여행이 너무 편해!" - <em>멤버 2</em><br>"가끔 무섭지만 속은 따뜻한 우리 든든한 대장" - <em>멤버 7</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
